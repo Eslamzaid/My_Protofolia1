@@ -1,0 +1,26 @@
+/* ! THE NAV BAR */
+nav{
+    font-size: 1.3vw;
+}
+
+/*? The elements of the nav */
+
+.NavB{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    
+    align-items: baseline;
+    
+}
+/* My name */
+#myName{
+    font-size: 3vw;
+    background-color: #f3ec78;
+    background-image: linear-gradient( #cc2b5e, #753a88);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
