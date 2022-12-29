@@ -1,0 +1,49 @@
+article > h1 {
+    margin-top: 10ch;
+}
+#arrowImg{
+    width: 1.5ch;
+    position: relative;
+    top: 0.2ch;
+}    
+
+.grid{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 32rem 30rem;
+    text-align: start;
+}
+.grid > section{
+    border-radius: 5ch;
+}
+/* #photos{
+    width: 30ch;
+    border: 1px solid black;
+    padding: 1ch 10ch; */
+/* } */
+
+#photos_one {
+    width: 40ch ;
+    height: 40ch;    
+    object-fit: contain;
+}
+
+#photos_two {
+    object-fit: contain;
+    width: 40ch ;
+    height: 40ch;
+
+}
+
+#photos_three {
+    width: 40ch ;
+    height: 40ch;
+    object-fit: contain;
+}
+
+#photos_four {
+    width: 40ch ;
+    height: 40ch;
+    object-fit: contain;
+}

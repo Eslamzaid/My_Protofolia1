@@ -5,7 +5,7 @@ import stack from "../Image/stack.png"
 import telegram from "../Image/telegram.png"
 import twitter from "../Image/twitter.png"
 
-const Footer = () => {
+const Footer = (props) => {
     
     return (
         <footer>
@@ -14,7 +14,7 @@ const Footer = () => {
                 <h1>Eslam</h1>
             </div>
             <div className='socailMedia'>
-                <a target="_blank" rel="noreferrer" href='https://github.com/Eslamzaid'><img src={github} alt="A github "></img></a>
+                <a ref={props.hereisis} target="_blank" rel="noreferrer" href='https://github.com/Eslamzaid'><img src={github} alt="A github "></img></a>
                 <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/eslamzaid/'><img src={linkedin} alt="A linkedin "></img></a>
                 <a target="_blank" rel="noreferrer" href='https://stackoverflow.com/users/20173808/slam-zaid'><img src={stack} alt="A stackoverflow "></img></a>
                 <a target="_blank" rel="noreferrer" href='https://twitter.com/SrEslamzaid'><img src={twitter} alt="A twitter "></img></a>

@@ -1,0 +1,28 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#pro-photo{
+    width: 30vw;
+}
+
+.FirstSec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10pc;
+}
+.FirstSec > h2{
+    text-align: center;
+    margin-top: 11ch;
+}
+.FirstSec > h2 > span {
+    background-color: #f3ec78;
+    background-image: linear-gradient( #cc2b5e, #753a88);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    justify-self: flex-start;
+}

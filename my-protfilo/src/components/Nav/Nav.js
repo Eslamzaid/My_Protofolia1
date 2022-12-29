@@ -1,16 +1,24 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import fgd from './../Image/discord.png'
 import * as React from "react";
 import "./nav.css"
 
-
-const Nav = () => {
+const Nav = (props) => {
     return (
         <nav>
             <div className="NavB">
-                <h1 id="myName">Eslam</h1>
-                <h2>About</h2>
-                <h2>Projects</h2>
-                <h2>Contact Me</h2>
+                <div className="NabB1">
+                    <h2 id="myName">EslamZ</h2>
+                </div>
+                <div className="NabB2">
+                    <h2  className="nav-elem">Home</h2>
+                    <h2 className="nav-elem">About</h2>
+                    <h2 className="nav-elem">Projects</h2>
+                </div>
+                <div className="NabB3">
+                    <h2 className=" buttonn">Contact Me</h2>
+                </div>
+                {/* onClick={props.connect} */}
             </div>
         </nav>
     )
