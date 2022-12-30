@@ -17,7 +17,7 @@ const Nav = (props) => {
 
 
     return (    
-        <nav className={navbar ? 'active' : 'nav'}>
+        <nav className={navbar ? 'active' : 'navtransition: 0.5s;'}>
             <div className="NavB">
                 <div className="NabB1">
                     <h2 id="myName">EslamZ</h2>

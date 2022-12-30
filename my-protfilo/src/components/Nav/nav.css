@@ -4,7 +4,8 @@ nav{
     position: sticky;
     top: 0;
     background: transparent;
-    transition: ease-in-out;
+    transition-timing-function: ease-in-out;
+    transition: 0.5s;
 }
 
 /*? The elements of the nav */
@@ -14,6 +15,7 @@ nav.active {
     opacity: 0.9;
     transition-timing-function: ease-in-out ;
     transition: 0.5s;
+    padding: 1vh;
 }
 
 .NavB{

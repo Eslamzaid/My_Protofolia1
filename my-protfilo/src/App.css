@@ -8,6 +8,10 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+body{
+  background-color: rgb(219, 213, 213);
+
+}
 img{
   width: 10vmin;
 }

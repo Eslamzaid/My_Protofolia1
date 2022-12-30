@@ -1,5 +1,6 @@
 article > h1 {
     margin-top: 10ch;
+    text-align: center;
 }
 #arrowImg{
     width: 1.5ch;
@@ -8,42 +9,54 @@ article > h1 {
 }    
 
 .grid{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 32rem 30rem;
     text-align: start;
+    column-gap: 15ch;
 }
 .grid > section{
-    border-radius: 5ch;
+    border-bottom-left-radius: 5ch;
+    border-bottom-right-radius: 5ch;
 }
-/* #photos{
-    width: 30ch;
-    border: 1px solid black;
-    padding: 1ch 10ch; */
-/* } */
 
 #photos_one {
-    width: 40ch ;
-    height: 40ch;    
+    width: 25vw ;
+    height: 25vw;
     object-fit: contain;
 }
 
 #photos_two {
+    width: 25vw ;
+    height: 25vw;
     object-fit: contain;
-    width: 40ch ;
-    height: 40ch;
 
 }
 
 #photos_three {
-    width: 40ch ;
-    height: 40ch;
+    width: 25vw ;
+    height: 25vw;
     object-fit: contain;
 }
 
 #photos_four {
-    width: 40ch ;
-    height: 40ch;
+    width: 25vw ;
+    height: 25vw;
     object-fit: contain;
+}
+
+.div-s{
+    /* border: 1px solid black; */
+    width: 25vw;
+}
+.inside1 , .inside2 , .inside3 , .inside4{
+    border-bottom:1px solid black;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    z-index: -1;
+    padding: 1vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 9ch;
 }
