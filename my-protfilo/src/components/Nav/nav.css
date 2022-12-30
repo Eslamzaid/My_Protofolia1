@@ -27,7 +27,7 @@ nav.active {
     opacity: 0.8;
     flex-wrap: wrap;
 }
-/* My name */
+/* ! My name */
 #myName{
     font-size: 2vw;
     /* background-image: linear-gradient( #cc2b5e, #753a88);

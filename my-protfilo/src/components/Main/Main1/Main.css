@@ -1,6 +1,7 @@
 main{
     display: flex;
-    justify-content: center;
+    /* justify-content: center;   
+    align-items: center;  */
 }
 
 #pro-photo{
@@ -9,14 +10,18 @@ main{
 
 .FirstSec{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:2fr 1fr  1fr;
+    grid-template-rows: 1fr;
     margin-top: 10pc;
 }
-.FirstSec > h2{
+.FirstSec > .hello > h2{
     text-align: center;
     margin-top: 11ch;
+    font-size: 2.8ch;
+    position: relative;
+    bottom: 1ch;
 }
-.FirstSec > h2 > span {
+.FirstSec > .hello > h2 > span {
     background-color: #f3ec78;
     background-image: linear-gradient( #cc2b5e, #753a88);
     background-size: 100%;
@@ -25,4 +30,19 @@ main{
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     justify-self: flex-start;
+}
+.hello{
+    text-align: center;
+}
+
+.hello > p {
+    width: 42vh;
+    text-align: center;
+    margin-left: 23.5ch;
+    color: gray;
+}
+
+.hello > h3{
+    margin-top: 1em;
+    color: gray;
 }

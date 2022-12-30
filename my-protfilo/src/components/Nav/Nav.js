@@ -15,7 +15,6 @@ const Nav = (props) => {
 
     window.addEventListener('scroll', changeBackground)
 
-
     return (    
         <nav className={navbar ? 'active' : 'navtransition: 0.5s;'}>
             <div className="NavB">
