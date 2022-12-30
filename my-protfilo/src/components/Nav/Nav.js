@@ -1,11 +1,23 @@
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import fgd from './../Image/discord.png'
-import * as React from "react";
 import "./nav.css"
 
 const Nav = (props) => {
-    return (
-        <nav>
+    const [navbar, setNavbar] = useState(false)
+
+    const changeBackground = () => {
+        if(window.scrollY >= 100) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground)
+
+
+    return (    
+        <nav className={navbar ? 'active' : 'nav'}>
             <div className="NavB">
                 <div className="NabB1">
                     <h2 id="myName">EslamZ</h2>

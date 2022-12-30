@@ -1,17 +1,28 @@
 /* ! THE NAV BAR */
 nav{
     font-size: 0.5vw;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    transition: ease-in-out;
 }
 
 /*? The elements of the nav */
+nav.active {
+    background-color:  rgb(0, 0, 0);
+    color: white;
+    opacity: 0.9;
+    transition-timing-function: ease-in-out ;
+    transition: 0.5s;
+}
 
 .NavB{
+    background: transparent;
     display: flex;
     justify-content: space-between;
     /* border-bottom: 1px solid black; */
     align-items: baseline;
     opacity: 0.8;
-    margin-top: 3em;
     flex-wrap: wrap;
 }
 /* My name */
