@@ -1,5 +1,6 @@
 article > h1 {
-    margin-top: 10ch;
+    margin-top: 11ch;
+    margin-bottom: 5ch;
     text-align: center;
 }
 #arrowImg{
@@ -11,52 +12,74 @@ article > h1 {
 .grid{
     /* border: 1px solid black; */
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 32rem 30rem;
+    grid-template-rows: 50ch 50ch ;
+    grid-template-columns: 30ch  38ch;
     text-align: start;
     column-gap: 15ch;
+    row-gap: 8ch;
 }
 .grid > section{
-    border-bottom-left-radius: 5ch;
-    border-bottom-right-radius: 5ch;
+    margin-bottom: 10ch;
 }
 
 #photos_one {
-    width: 25vw ;
-    height: 25vw;
+    width: 20vw ;
+    height: 20vw;
     object-fit: contain;
+    position: relative;
+    bottom: 4em;
 }
 
 #photos_two {
-    width: 25vw ;
-    height: 25vw;
+    width: 20vw ;
+    height: 20vw;
     object-fit: contain;
-
+    position: relative;
+    bottom: 4em;
 }
 
 #photos_three {
-    width: 25vw ;
-    height: 25vw;
+    width: 20vw ;
+    height: 20vw;
     object-fit: contain;
+    position: relative;
+    bottom: 4em;
 }
 
 #photos_four {
-    width: 25vw ;
-    height: 25vw;
+    width: 20vw ;
+    height: 20vw;
     object-fit: contain;
+    position: relative;
+    bottom: 4em;
 }
 
-.div-s{
-    /* border: 1px solid black; */
-    width: 25vw;
+.outerLine{
+    width: 20vw;
+    border: 1px solid black;
+    height: 12.6cm;
+    margin-bottom: 10ch;
+    background-color: transparent;
+
 }
-.inside1 , .inside2 , .inside3 , .inside4{
-    border-bottom:1px solid black;
+.inside2 , .inside3 , .inside4{
+    /* border-bottom:1px solid black;
     border-left:1px solid black;
-    border-right:1px solid black;
-    z-index: -1;
+    border-right:1px solid black; */
     padding: 1vh;
     background-color: rgb(255, 255, 255);
     position: relative;
-    bottom: 9ch;
+    bottom: 13.3ch;
+}
+.inside2, .inside3 {
+    padding-bottom: 3.3ch;
+}
+.inside4{
+    padding-bottom: 5.7ch;
+}
+.inside1 {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 13.4ch;
+    padding: 0.6em;
 }

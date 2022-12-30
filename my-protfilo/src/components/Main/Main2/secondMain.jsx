@@ -15,10 +15,10 @@ const Projects = () => {
                         <img src={table} id="photos_one" alt="Little Lemon restaurant"/>
                         <div className='inside1'>
                             <h3>Little lemon</h3>
-                            <p>I create this website for <q>Little Lemon Restaurant</q> so you can book a table, make reviews and talk directly to chief if you want to edit the recipe or take it,order dishes all online!</p>
+                            <p>I create this website for <q>Little Lemon Restaurant</q> so you can book a table, make reviews and talk directly to chief if you want to edit the recipe or contribute ,order dishes all online!</p>
                             <h5 className='see_more'>See more <img src={arrow} id="arrowImg" alt="of an arrow aiming right"/></h5>
+                            <button id='lastButton'>Read More!</button>
                         </div>
-                        
                     </div>
                 </section>
                     <section className='Mosque_Project div-s'>
@@ -28,6 +28,7 @@ const Projects = () => {
                                 <h3>Mosque Startup</h3>
                                 <p>What is this website all about is basically an attendance system to the mosques that record the present and the absent students moreover Ranking them up and a lot more!</p>
                                 <h5 className='see_more'>See more <img src={arrow} id="arrowImg" alt="of an arrow aiming right"/></h5>
+                                <button id='lastButton'>Read More!</button>
                             </div>
                         </div>
                     </section>
@@ -38,6 +39,7 @@ const Projects = () => {
                                 <h3>realEstate app record</h3>
                                 <p>I had created with the help of my brother a realEstate website in which you can book a home for reasonable price and <q>Excellent Quality</q>!</p>
                                 <h5 className='see_more'>See more <img src={arrow} id="arrowImg" alt="of an arrow aiming right"/></h5>
+                                <button id='lastButton'>Read More!</button>
                             </div>
                         </div>
                     </section>
@@ -48,6 +50,7 @@ const Projects = () => {
                                 <h3>Google extensions</h3>
                                 <p>I had created a lot of extensions for instance website blocking pages, tasks record, notes, timer, and mush more!</p>
                                 <h5 className='see_more'>See more <img src={arrow} id="arrowImg" alt="of an arrow aiming right"/></h5>
+                                <button id='lastButton'>Read More!</button>
                             </div>
                         </div>
                     </section>
