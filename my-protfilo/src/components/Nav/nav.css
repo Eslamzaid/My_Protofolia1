@@ -11,11 +11,13 @@ nav{
 /*? The elements of the nav */
 nav.active {
     background-color:  rgb(0, 0, 0);
-    color: white;
+    color: rgb(255, 255, 255);
+        
     transition-timing-function: ease-in-out ;
     transition: 0.5s;
     padding: 1vh;
     z-index: 999;
+    
 }
 
 .NavB{
@@ -68,4 +70,17 @@ nav.active {
 .nav-elem:active{
     transition: 0s;
     opacity: 1;
+}
+
+#arrow-width{
+    position: absolute;
+    width: 2ch;
+    transition: 0.2s;
+    /* background-color: #A26AFC; */
+}
+
+
+#arrow-width:hover, .nav-elem.one:hover::after{
+    rotate: -90deg;
+    transition: 0.2s;
 }

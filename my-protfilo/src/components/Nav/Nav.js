@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import fgd from './../Image/discord.png'
+import fgd from './../Image/down-arrow.png'
 import "./nav.css"
 
 const Nav = (props) => {
@@ -24,7 +24,7 @@ const Nav = (props) => {
                 <div className="NabB2">
                     <h2  className="nav-elem">Home</h2>
                     <h2 className="nav-elem">About</h2>
-                    <h2 className="nav-elem">Projects</h2>
+                    <h2 className="nav-elem one">Projects <img src={fgd} id="arrow-width" alt="Arrow down"></img> </h2>
                 </div>
                 <div className="NabB3">
                     <h2 className=" buttonn">Contact Me</h2>
