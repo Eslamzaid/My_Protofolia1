@@ -1,8 +1,18 @@
+
+#hideit{
+    border: none;
+}
+.whiteBack{
+    background-color: white;
+    display: flex;
+    justify-content: center;   
+}
 article > h1 {
-    margin-top: 11ch;
-    margin-bottom: 5ch;
+    margin-top: 5ch;
+    margin-bottom: 3ch;
     text-align: center;
 }
+
 #arrowImg{
     width: 1.5ch;
     position: relative;
@@ -13,7 +23,7 @@ article > h1 {
     /* border: 1px solid black; */
     display: grid;
     grid-template-rows: 50ch 50ch ;
-    grid-template-columns: 30ch  38ch;
+    grid-template-columns:30ch  38ch ;
     text-align: start;
     column-gap: 15ch;
     row-gap: 8ch;
@@ -22,64 +32,57 @@ article > h1 {
     margin-bottom: 10ch;
 }
 
-#photos_one {
-    width: 20vw ;
-    height: 20vw;
-    object-fit: contain;
-    position: relative;
-    bottom: 4em;
-}
-
-#photos_two {
-    width: 20vw ;
-    height: 20vw;
-    object-fit: contain;
-    position: relative;
-    bottom: 4em;
-}
-
-#photos_three {
-    width: 20vw ;
-    height: 20vw;
-    object-fit: contain;
-    position: relative;
-    bottom: 4em;
-}
-
-#photos_four {
-    width: 20vw ;
-    height: 20vw;
-    object-fit: contain;
-    position: relative;
-    bottom: 4em;
-}
-
 .outerLine{
-    width: 20vw;
-    border: 1px solid black;
-    height: 12.6cm;
+    width: 22vw;
+    height: 12.5cm;
     margin-bottom: 10ch;
+    overflow: hidden;
+    scroll-behavior: hidden;
+    border: 1px solid black;
     background-color: transparent;
 
 }
-.inside2 , .inside3 , .inside4{
-    /* border-bottom:1px solid black;
-    border-left:1px solid black;
-    border-right:1px solid black; */
-    padding: 1vh;
-    background-color: rgb(255, 255, 255);
+.hellobozo{
+    margin-top: 3ch;
     position: relative;
-    bottom: 13.3ch;
+    bottom: 11.6ch;
+    text-align: center;
+    padding-top: 2ch;
+    display: flex;
+    flex-direction: column;
 }
-.inside2, .inside3 {
-    padding-bottom: 3.3ch;
+
+.bottomPart{
+    height: 3ch;
+    display: flex;
+    justify-content: center;
 }
-.inside4{
-    padding-bottom: 5.7ch;
+.bottomPart > h5 {
+    margin-left: 2ch;
+    margin-top: 3ch;
 }
-.inside1 {
-    background-color: rgb(255, 255, 255);
+.group-of-photos{
+    width: 22vw ;
+    height: 20vw;
+    object-fit: contain;
     position: relative;
-    bottom: 13.4ch;
-    padding: 0.6em;
+    bottom: 4em;
+}
+
+#lastButton{
+    padding: 1rem;
+    text-align: center;
+    padding-top: 1ch;
+    color: black;
+    border: none;
+   background-color: white;
+    border: 1px solid black;
+}
+#lastButton:hover{
+    border: 1px solid rgb(206, 202, 202);
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+    cursor: pointer;
+
 }

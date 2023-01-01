@@ -1,0 +1,45 @@
+    /* !The Main Background components */
+.theFather{
+    background: linear-gradient(to top, rgb(77, 75, 75) , white );
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 20cm;
+}
+/* The Contact Us */
+.title{
+    text-align: center;
+    margin-top: 15ch;
+    font-size: 1.5vmax;
+}
+/* The positioning */
+.mange{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*  The form elements */
+.buttons{
+    width: 100ch;
+    height: 4ch;
+    border-radius: 1ch;
+    border: none;
+    margin: 1ch 0ch;
+    padding: 0.5em;
+}
+.theContactForm{
+    margin-top: 10vh;
+}
+/* The space between the elements */
+
+/* The textArea */
+.textArea{
+    resize: none;
+    padding: 0.5em;
+    margin-right: 1rem;
+}
