@@ -50,17 +50,11 @@ article > h1 {
     padding-top: 2ch;
     display: flex;
     flex-direction: column;
+    position: relative;    
+    bottom: 10em;
 }
 
-.bottomPart{
-    height: 3ch;
-    display: flex;
-    justify-content: center;
-}
-.bottomPart > h5 {
-    margin-left: 2ch;
-    margin-top: 3ch;
-}
+
 .group-of-photos{
     width: 22vw ;
     height: 20vw;
@@ -72,7 +66,7 @@ article > h1 {
 #lastButton{
     padding: 1rem;
     text-align: center;
-    padding-top: 1ch;
+    padding-bottom: 1ch;
     color: black;
     border: none;
    background-color: white;
@@ -84,5 +78,4 @@ article > h1 {
     background-color: rgb(0, 0, 0);
     transition: 0.3s;
     cursor: pointer;
-
 }
