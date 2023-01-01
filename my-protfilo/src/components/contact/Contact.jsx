@@ -1,14 +1,29 @@
-import {useFormik} from "formik"
+import {useFormik, validationSchema} from "formik"
+import { BasicSchema  } from "./schema"
 import './Contact.css'
+const onSubmit = async (values, actions) => {
+    console.log(values)
+    console.log(actions)
+    await new Promise((resolve) => setTimeout(resolve, 1000))
+    actions.resetForm()
+}
 const Contact = (props) => {
-    const { values, handleBlur, handleChange,} = useFormik({
+
+
+    const { values,errors,touched , isSubmitting, handleBlur, handleChange, handleSubmit} = useFormik({
         initialValues: {
-            email: "",
             firstName: '',
             lastName: '',
+            email: "",
             
-        }
+        },
+        validationSchema: BasicSchema,
+        onSubmit,
+
     })
+    // console.log(values)
+    // console.log(errors)
+
     return(
         <article className='theFather'>
             <section className='mange'>
@@ -17,41 +32,45 @@ const Contact = (props) => {
                     {/* id='hideit' */}
                 </div>
                 <div className="theContactForm">
-                    <form autoComplete="off">
+                    <form onSubmit={handleSubmit} autoComplete="off">
                         <div className='FirstName names space'>
-                            <label htmlFor='firstName'>First Name</label>
+                            <label htmlFor='firstName'>First Name</label><br/>
                             <input
-                                 className="buttons"
                                  value={values.firstName}
                                  onChange={handleChange}
                                  onBlur={handleBlur}
-                                 id
+                                 id="firstName"
+                                //  required
                                  type='text'
+                                 className={errors.firstName && touched.firstName ? "inputError" : ""}
                                  placeholder="Your first Name"
-                                 >
-                            </input><br/>
-                                <label htmlFor='secondName'>Second Name</label>
+                                 />
+                                {  errors.firstName && touched.firstName ? <p className="error-inp">{errors.firstName}</p> : ""}
+                                <br/>
+                                <label htmlFor='secondName'>Second Name</label><br/>
                                 <input
-                                     className="buttons"
                                      value={values.lastName}
                                      onChange={handleChange}
                                      onBlur={handleBlur}
                                      type='text'
+                                    //  required
                                      id="lastName"
                                      placeholder="Your second Name"
-                                     >
-                                </input><br/>
-                                    <label htmlFor='email'>Email</label>
+                                     className={errors.lastName && touched.lastName ? "inputError" : ""}
+                                     />
+                                     {errors.lastName && touched.lastName ? <p className="error-inp">{errors.lastName}</p> : ""}
+                                    <br/>
+                                    <label htmlFor='email'>Email</label><br/>
                                     <input
-                                         className="buttons"
                                          value={values.email}
                                          onChange={handleChange}
                                          onBlur={handleBlur}
                                          id='email'
                                          type='email'
                                          placeholder="Enter your email"
-                                         >
-                                    </input><br/>
+                                         className={errors.email && touched.email ? "inputError" : ""}
+                                         />
+                                         {errors.email && touched.email ? <p className="error-inp">{errors.email}</p>: null}<br/>
                         </div>
                         <div className='Enquiry space'>
                             <label>Type of enquiry:<br/>
@@ -70,7 +89,7 @@ const Contact = (props) => {
                         </div>
                             <button id='buttons' type="submit">Submit</button>
                     </form>
-                    <button id='hideit' ref={props.over} ></button>
+                    <button disabled={isSubmitting}  id='hideit' ref={props.over} ></button>
                 </div>
             </section>
         </article>

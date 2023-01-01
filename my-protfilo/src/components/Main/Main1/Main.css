@@ -34,11 +34,11 @@
     background-color: #f3ec78;
     background-image: linear-gradient( #cc2b5e, #753a88 #cc2b5e);
     background-size: 100%;
+    justify-self: flex-start;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-    justify-self: flex-start;
 }
 .hello{
     text-align: center;
