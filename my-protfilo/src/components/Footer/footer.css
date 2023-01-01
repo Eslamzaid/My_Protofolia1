@@ -1,0 +1,32 @@
+footer{
+    padding: 1pc;
+    background-color: black;
+    
+}
+footer > section{
+    padding: 5pc;
+    color:white;
+    display: grid;
+    grid-template-columns:2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    
+}
+.black{
+    text-align: center;
+}
+.TitleOf::grammar-error{
+
+}
+
+footer > section > div img{
+    min-width: 2ch;
+    max-width: 4ch;
+}
+.socailMedia{
+    /* border: 1px solid white; */
+    width: max-content;
+    height: max-content;
+}
+a{
+    margin: 0ch 2ch;
+}

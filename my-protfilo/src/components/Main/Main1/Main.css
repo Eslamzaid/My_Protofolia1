@@ -3,7 +3,7 @@
     justify-content: center;   
     align-items: center; 
     background-color: rgb(219, 213, 213);
-    margin-bottom: 16vh;
+    height: 90ch;
 }
 .FirstSec > .hello > h2{
     color: white;
@@ -21,7 +21,7 @@
     display: grid;
     grid-template-columns:2fr 1fr  2fr;
     grid-template-rows: 1fr;
-    margin-top: 10pc;
+    /* margin-top: 10pc; */
 }
 .FirstSec > .hello > h2{
     text-align: center;

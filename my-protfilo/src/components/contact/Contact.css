@@ -1,10 +1,12 @@
     /* !The Main Background components */
 .theFather{
-    background: linear-gradient(to top, rgb(77, 75, 75) , white );
+    background-color: white;
     color: rgb(0, 0, 0);
     width: 100%;
     max-height: 100vh;
+    border-top: 1rem solid black;    
 }
+
 /* The Contact Us */
 .title{
     text-align: center;
@@ -21,18 +23,44 @@ form{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 3ch;
 }
-
 /*  The form elements */
 .theContactForm{
     margin-top: 10vh;
 }
+#buttons{
+    width: 100ch;
+    height: 4ch;
+    border-radius: 1ch;
+    margin: 1ch 0ch;
+    border: none;
+    padding: 0.5em;
+}
 
+textarea{
+    width: 60ch;
+    background-color:rgb(139, 137, 137);
+}
+textarea:focus{
+}
+#buttons2{
+    border: none;
+    padding: 1rem;
+    border-radius: 45px;
+}
+input{
+    background-color: rgb(189, 189, 189);
+}
+input:focus, textarea:focus{
+    background-color: white;
+}
 /* The textArea */
 .textArea{
     resize: none;
     padding: 0.5em;
     margin-right: 1rem;
+
 }
 #firstName, #email, #lastName{
     width: 100ch;
@@ -49,12 +77,18 @@ input.inputError, select.inputError{
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
-
-
 .error-inp{
     color:#D38087;
     font-size: small;
 }
 button:disabled{
     opacity: 0.35;
+}   
+#buttons2{
+    margin-bottom: 1rem;
+}
+#buttons2:hover{
+    color:white;
+    background-color: black;
+    transition: 0.3s;
 }

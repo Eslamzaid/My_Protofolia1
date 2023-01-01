@@ -53,7 +53,6 @@ const Contact = (props) => {
                                      onChange={handleChange}
                                      onBlur={handleBlur}
                                      type='text'
-                                    //  required
                                      id="lastName"
                                      placeholder="Your second Name"
                                      className={errors.lastName && touched.lastName ? "inputError" : ""}
@@ -74,20 +73,21 @@ const Contact = (props) => {
                         </div>
                         <div className='Enquiry space'>
                             <label>Type of enquiry:<br/>
-                                <input id='buttons' list="browsers" name="myBrowser" /> 
+                                <input required id='buttons' placeholder="I want/have" list="browsers" name="myBrowser" /> 
                             </label><br/>
                             <datalist id="browsers">
                                 <option value="I have a project" />
-                                <option value="Just want to increase my network" />
                                 <option value="I have a proposal" />
                                 <option value="Have a job offer" />   
+                                <option value="Just want to increase my network" />
+                                <option value="Other"/>
                             </datalist>
                         </div>
-                        <div className='textArea space'>
+                        <div className='textArea'>
                             <label>Your Message</label><br/>
-                            <textarea rows="10"  cols="100"></textarea><br/>
+                            <textarea rows="10" minLength="10" cols="100"></textarea><br/>
                         </div>
-                            <button id='buttons' type="submit">Submit</button>
+                            <button id='buttons2' type="submit">Submit</button>
                     </form>
                     <button disabled={isSubmitting}  id='hideit' ref={props.over} ></button>
                 </div>
