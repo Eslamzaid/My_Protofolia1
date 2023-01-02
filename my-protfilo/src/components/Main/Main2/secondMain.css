@@ -1,6 +1,8 @@
-
 #hideit{
-    border: none;
+    background-color: white;
+    border: black;
+    width: 10ch;
+    
 }
 .whiteBack{
     background-color: white;
@@ -29,47 +31,15 @@ article > h1 {
     row-gap: 8ch;
 }
 .grid > section{
-    margin-bottom: 10ch;
+    margin-bottom: 0ch;
 }
-
-.outerLine{
-    width: 22vw;
-    height: 12.5cm;
-    margin-bottom: 10ch;
-    overflow: hidden;
-    scroll-behavior: hidden;
-    border: 1px solid black;
-    background-color: transparent;
-
-}
-.hellobozo{
-    margin-top: 3ch;
-    position: relative;
-    bottom: 11.6ch;
-    text-align: center;
-    padding-top: 2ch;
-    display: flex;
-    flex-direction: column;
-    position: relative;    
-    bottom: 10em;
-}
-
-
-.group-of-photos{
-    width: 22vw ;
-    height: 20vw;
-    object-fit: contain;
-    position: relative;
-    bottom: 4em;
-}
-
 #lastButton{
     padding: 1rem;
     text-align: center;
     padding-bottom: 1ch;
     color: black;
     border: none;
-   background-color: white;
+    background-color: white;
     border: 1px solid black;
 }
 #lastButton:hover{
@@ -78,4 +48,71 @@ article > h1 {
     background-color: rgb(0, 0, 0);
     transition: 0.3s;
     cursor: pointer;
+}
+.outerLine{
+    width: 22vw;
+    height: 12.5cm;
+    margin-bottom: 10ch;
+    overflow: hidden;
+    scroll-behavior: hidden;
+    border: 1px solid black;
+    background-color: transparent;
+    
+}
+.hellobozo{
+    margin-top: 3ch;
+    text-align: center;
+    padding-top: 2ch;
+    display: flex;
+    flex-direction: column;
+    position: relative;    
+    bottom: 10em;
+}
+.group-of-photos{
+    width: 22vw ;
+    height: 20vw;
+    object-fit: contain;
+    position: relative;
+    bottom: 4em;
+}
+@media screen and (max-width: 1000px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        text-align: start;
+        column-gap: 15ch;
+        row-gap: 8ch;
+    }
+    .group-of-photos{
+        width: 100%;
+        
+        height: 50%;
+        position: relative;
+        bottom: 1em;
+        overflow: hidden;
+
+    }
+    .grid:last-child{
+        margin-bottom: 5ch;
+    }
+    .outerLine{
+        width: 90%;
+        margin-bottom: 0px;
+        margin-left: 1em;
+    }
+    .hellobozo{
+        /*
+        margin-top: 3ch;
+        text-align: center;
+        padding-top: 2ch;
+        display: flex;
+        flex-direction: column;
+        position: relative;    
+        bottom: 10em; */
+        position: relative;
+        top: 0em;
+        bottom: 0;
+        margin-top: 0px;
+    }
 }

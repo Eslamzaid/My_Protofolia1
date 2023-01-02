@@ -1,16 +1,16 @@
 /* ! THE NAV BAR */
 nav{
-    font-size: 0.5vw;
+    font-size: 1vmin;
     position: sticky;
     top: 0;
     background: transparent;
     transition-timing-function: ease-in-out;
     transition: 0.5s;
     background-color: rgb(219, 213, 213);
+    z-index: 20000000000000;
 }
 #hideIt{
     border: none;
-    
 }
 
 /*? The elements of the nav */
@@ -81,4 +81,21 @@ nav.active {
 #arrow-width:hover, .nav-elem.one:hover::after{
     rotate: -90deg;
     transition: 0.2s;
+}
+
+@media screen and (max-width: 500px) {
+    nav{
+        font-size: 2vmin;
+    }
+    .hideit{
+        visibility: hidden;
+    }
+    #myName{
+        font-size: xx-large;
+        margin-top: 1ch;
+    }
+    .NavB{
+        display: flex;
+        justify-content: center;
+    }
 }

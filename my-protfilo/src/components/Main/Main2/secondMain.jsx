@@ -9,7 +9,7 @@ const Projects = (props) => {
         <main className='whiteBack'>
             <article>
                 <h1>Projects</h1>
-                    <button ref={props.hereisis}></button>
+                    <button id='hideIt' ref={props.hereisis}></button>
                 <div className='grid'>
                 <section className='little-lemon div-s'>
                     <div className='outerLine'>
@@ -47,7 +47,7 @@ const Projects = (props) => {
                             </div>
                         </div>
                     </section>
-                    <section className="Google_Extensions div-s">
+                    <section className="Google_Extensions lessDown div-s">
                         <div className='outerLine'>
                             <img src={extension} id="photos_four" className='group-of-photos' alt="Google Extensions Pro."/>
                             <div className='inside4 hellobozo'>

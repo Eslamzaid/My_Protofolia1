@@ -73,7 +73,7 @@ const Contact = (props) => {
                         </div>
                         <div className='Enquiry space'>
                             <label>Type of enquiry:<br/>
-                                <input required id='buttons' placeholder="I want/have" list="browsers" name="myBrowser" /> 
+                                <input id='buttons' placeholder="I want/have" list="browsers" name="myBrowser" /> 
                             </label><br/>
                             <datalist id="browsers">
                                 <option value="I have a project" />

@@ -27,7 +27,7 @@ const Nav = (props) => {
                 <div className="NabB2">
                     <h2  className="nav-elem" onClick={props.connectHome}>Home</h2>
                     
-                    <h2 className="nav-elem">About</h2>
+                    <h2 className="nav-elem hideit">About</h2>
 
                     <h2 className="nav-elem one" onClick={props.connect}>Projects <img src={fgd} id="arrow-width" alt="Arrow down"></img> </h2>
                 </div>

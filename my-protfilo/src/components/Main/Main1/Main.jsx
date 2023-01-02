@@ -7,7 +7,7 @@ const Main = (props) =>  {
                 <section className='FirstSec'>
                     <div className='hello'>
                     <button id='hideIt' ref={props.connect}></button>
-                        <h2>Hello I am Eslam and <br/> I am<span> Frontend developer</span></h2>
+                        <h2>Hello!, <br/>I am Eslam and  I am<span><br/> Frontend developer</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, distinctio? Maiores, ducimus perferendis mollitia totam sint velit exercitationem maxime minus fugiat explicabo quod nihil nemo possimus iusto inventore officia.</p>
                         <button id='buttonP'>Read more</button>
                     </div>

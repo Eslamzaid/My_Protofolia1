@@ -1,3 +1,13 @@
 .blackGr{
     background-color: black;
 }
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}   
+
+@media screen and (max-width: 600px) {
+    body {
+        /* overflow: hidden; */
+        
+      } 
+    }
