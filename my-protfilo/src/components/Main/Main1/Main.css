@@ -1,0 +1,123 @@
+.fewDown{
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    background-color: rgb(219, 213, 213);
+    height: 90ch;
+}
+.FirstSec > .hello > h2{
+    color: white;
+    opacity: 0.8;
+}
+.FirstSec > .hello > h2:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
+#pro-photo{
+    width: 30vw;
+}
+
+.FirstSec{
+    display: grid;
+    grid-template-columns:2fr 1fr 2fr;
+    /* grid-template-rows: 1fr; */
+    /* margin-top: 10pc; */
+}
+.FirstSec > .hello > h2{
+    text-align: center;
+    margin-top: 8ch;
+    font-size: 2.8ch;
+    position: relative;
+    bottom: 1ch;
+}
+.FirstSec > .hello > h2 > span {
+    background-color: #f3ec78;
+    background-image: linear-gradient( #cc2b5e, #753a88 #cc2b5e);
+    background-size: 100%;
+    justify-self: flex-start;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.hello{
+    text-align: center;
+    background: linear-gradient(to left, #BA3F3C , #A26AFC) ;
+    border-radius: 70px;
+    transition: 0.3s;
+    width: 50ch;
+    height: fit-content;
+}
+.hello:hover{
+    box-shadow: 30px 30px 0px 6px  black,
+    -30px -30px 0px 6px black;;
+    transition: 0.7s ease-in-out;
+    border-radius: 0px;
+}
+
+.hello > p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    margin: 1em;
+}
+
+#buttonP{
+    padding: 0.6rem;
+    margin-top: 2ch;
+    color: black;
+    border: none;
+   background-color: white;
+    border-radius:  20px;
+    border: 1px solid transparent;
+    margin-bottom: 7ch;
+}
+#buttonP:hover{
+    background: none;
+    border: 1px solid black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+    .hello{
+        width: 100%;
+        border-radius: 0%;
+        font-size: small;
+        height: auto;
+        z-index: 1;
+        box-shadow: 0px 0px 0px 0px  black,
+        -0px -0px 0px px black;;
+    }
+    .hello:hover{
+        box-shadow: 0px 0px 0px 0px  black,
+        -0px -0px 0px 0px black;;
+    }
+    .fewDown{
+        height: 15cm;
+        
+    }
+    #buttonP:hover{
+        background: none;
+        border: 1px solid black;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .hello > p{
+        font-size: x-small;
+    }
+    .FirstSec > .hello > h2{
+        margin-top: 3vh;
+        margin-left: 1ch;
+        margin-right: 1ch;
+    }
+    .FirstSec{
+        display: flex; 
+        flex-direction: column;
+    }
+    #pro-photo{
+        visibility: hidden;
+    }
+        
+}

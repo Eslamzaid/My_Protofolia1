@@ -1,0 +1,101 @@
+/* ! THE NAV BAR */
+nav{
+    font-size: 1vmin;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    transition-timing-function: ease-in-out;
+    transition: 0.5s;
+    background-color: rgb(219, 213, 213);
+    z-index: 20000000000000;
+}
+#hideIt{
+    border: none;
+}
+
+/*? The elements of the nav */
+nav.active {
+    /* background-color:  rgb(0, 0, 0); */
+    background: black;
+    color: rgb(255, 255, 255);
+    transition-timing-function: ease-in-out ;
+    transition: 0.5s;
+    padding: 1vh;
+    z-index: 999;
+}
+
+.NavB{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid black; */
+    align-items: baseline;
+    opacity: 0.8;
+    flex-wrap: wrap;
+}
+/* ! My name */
+#myName{
+    font-size: 2vw;
+    justify-self: flex-start;
+    margin: 0ch 2ch;
+}
+
+.buttonn{
+    color: white;
+    background: linear-gradient(to left, #BA3F3C , #A26AFC) ;
+    padding: 1vh;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin: 0ch 2ch;
+    margin-bottom: 1ch;
+}
+
+
+.NabB2{
+    display: flex;
+    flex-direction: row;
+
+}
+.nav-elem{
+    margin: 0ch 5ch;
+}
+.nav-elem:hover{
+    opacity: 0.5;
+    transition: 0.10s;
+    cursor: pointer;
+}
+.nav-elem:active{
+    transition: 0s;
+    opacity: 1;
+}
+
+#arrow-width{
+    position: absolute;
+    width: 2ch;
+    transition: 0.2s;
+    /* background-color: #A26AFC; */
+}
+
+
+#arrow-width:hover, .nav-elem.one:hover::after{
+    rotate: -90deg;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 500px) {
+    nav{
+        font-size: 2vmin;
+    }
+    .hideit{
+        visibility: hidden;
+    }
+    #myName{
+        font-size: xx-large;
+        margin-top: 1ch;
+    }
+    .NavB{
+        display: flex;
+        justify-content: center;
+    }
+}

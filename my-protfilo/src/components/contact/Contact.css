@@ -1,0 +1,130 @@
+    /* !The Main Background components */
+.theFather{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: auto;
+    max-height: auto;
+    border-top: 1rem solid black;    
+}
+
+/* The Contact Us */
+.title{
+    text-align: center;
+    margin-top: 15ch;
+    font-size: 1.5vmax;
+}
+/* The positioning */
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3ch;
+}
+/*  The form elements */
+textarea{
+    resize: none ;
+
+}
+.theContactForm{
+    margin-top: 10vh;
+}
+#buttons{
+    width: 100%;
+    height: 4ch;
+    border-radius: 1ch;
+    margin: 1ch 0ch;
+    border: none;
+    padding: 0.5em;
+}
+
+textarea{
+    width: 60ch;
+    background-color:rgb(139, 137, 137);
+}
+
+#buttons2{
+    border: none;
+    width: 10em;
+    padding: 1rem;
+    border-radius: 45px;
+}
+
+input{
+    background-color: rgb(189, 189, 189);
+}
+input:focus, textarea:focus{
+    background-color: white;
+    resize: none;
+}
+/* The textArea */
+.space{
+    width: 80%;
+}
+.textArea{
+    padding: 0.5em;
+    margin-right: 1rem;
+}
+#firstName, #email, #lastName{
+    width: 100%;
+    height: 4ch;
+    border-radius: 1ch;
+    margin: 1ch 0ch;
+    border: none;
+    padding: 0.5em;
+}
+input.inputError, select.inputError{
+    border:  3px  solid #D38087 !important;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.error-inp{
+    color:#D38087;
+    font-size: small;
+}
+button:disabled{
+    opacity: 0.35;
+}   
+#buttons2{
+    margin-bottom: 1rem;
+}
+#buttons2:hover{
+    color:white;
+    background-color: black;
+    transition: 0.3s;
+}
+.mange{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+ /* ! The M       e     d    i a */  
+
+@media screen  and  (max-width: 900px) {
+    .mange{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+    }
+    .title{
+        text-align: start;
+        margin-top: 2ch;
+        margin-left: 15ch;
+        font-size: 3.5vmin;
+    }
+    .theContactForm{
+        margin-top: 0px;
+    }
+    #buttons{
+        width: 100%;
+    }
+    .textArea {
+        margin-left: 2ch;
+
+    }
+    textarea{
+        width: 100%;
+    }
+}

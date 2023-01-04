@@ -1,29 +1,41 @@
-import github from "../Image/github.png"
-import discord from "../Image/discord.png"
-import linkedin from "../Image/linkedin.png"
-import stack from "../Image/stack.png"
-import telegram from "../Image/telegram.png"
-import twitter from "../Image/twitter.png"
+import React, { useState } from "react";
+import fgd from './../Image/down-arrow.png'
+import "./nav.css"
 
-const footer = () => {
-    
-    return (
-        <footer>
-            <section>
-            <div className='TitleOf'>
-                <h1>Eslam</h1>
+const Nav = (props) => {
+
+    const [navbar, setNavbar] = useState(false)
+
+    const changeBackground = () => {
+        if(window.scrollY >= 100) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+    window.addEventListener('scroll', changeBackground)
+
+    const handleSumbit = () =>{
+        alert("Let's see amm...")
+    }
+    return (    
+        <nav className={navbar ? 'active' : 'navtransition: 0.5s;'}>
+            <div className="NavB">
+                <div className="NabB1">
+                    <h2 id="myName">EslamZ</h2>
+                </div>
+                <div className="NabB2">
+                    <h2  className="nav-elem" onClick={props.connectHome}>Home</h2>
+                    
+                    <h2 className="nav-elem hideit">About</h2>
+
+                    <h2 className="nav-elem one" onClick={props.connect}>Projects <img src={fgd} id="arrow-width" alt="Arrow down"></img> </h2>
+                </div>
+                <div className="NabB3">
+                    <h2 className="buttonn" onClick={props.overThere}   >Contact Me</h2>
+                </div>
             </div>
-            <div className='socailMedia'>
-                <a target="_blank" href='https://github.com/Eslamzaid'><img src={github}></img></a>
-                <a target="_blank" href='https://www.linkedin.com/in/eslamzaid/'><img src={linkedin}></img></a>
-                <a target="_blank" href='https://stackoverflow.com/users/20173808/slam-zaid'><img src={stack}></img></a>
-                <a target="_blank" href='https://twitter.com/SrEslamzaid'><img src={twitter}></img></a>
-                <a target="_blank" href='https://discord.gg/BvAR4gGB'><img src={discord}></img></a>
-                <a target="_blank" href='https://t.me/javascriptTutorials97'><img src={telegram}></img></a>
-            </div>
-            </section>
-        </footer>
+        </nav>
     )
 }
-
-export default footer
+export default Nav

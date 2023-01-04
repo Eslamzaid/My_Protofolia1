@@ -1,0 +1,49 @@
+footer{
+    padding: 1pc;
+    background-color: black;
+}
+footer > section  .fooSec{
+    padding: 5pc;
+    color:rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0rem 40rem ;
+    grid-template-rows: 1fr;
+}
+.black{
+    text-align: center;
+}
+
+footer > section > div  img{
+    min-width: 2ch;
+    max-width: 4ch;
+}
+.socailMedia{
+    /* border: 1px solid white; */
+    width: max-content;
+    height: max-content;
+}
+a{
+    margin: 0ch 2ch;
+}
+
+@media screen and (max-width: 600px) {
+    footer > section  .fooSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px;
+
+    }   
+    footer > section > div  img{
+        min-width: 1ch;
+        max-width: 2ch;
+    }
+    .socailMedia{
+        display: inline;
+    } 
+    a{
+        margin: 0ch 1ch;
+    }
+}
